@@ -2,19 +2,19 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-class sub 
+class add
 {
    float c;
 public:
 
    add() 
    {
-       cout << "Diff is:";
+       cout << "sum is:";
    }
 
-   sub(float x, float y) 
+   add(float x, float y) 
    {
-       c = x - y;
+       c = x + y;
    }
 
    void display() 
@@ -31,8 +31,8 @@ float main()
    cout << "Enter two numbers:";
    cin >> x>>y;
 
-   sub t;
-   sub tt(x, y);
+   add t;
+   add tt(x, y);
    tt.display();
    getch();
    return 0;
