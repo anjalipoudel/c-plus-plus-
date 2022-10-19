@@ -12,9 +12,9 @@ public:
        cout << "sum is:";
    }
 
-   add(float x, float y) 
+   add(float x,float y, float z) 
    {
-       c = x + y;
+       c = x + y + z;
    }
 
    void display() 
@@ -26,13 +26,13 @@ public:
 float main()
  {
 
-   float x, y;
+   float x, y, z;
 
-   cout << "Enter two numbers:";
-   cin >> x>>y;
+   cout << "Enter three numbers:";
+   cin >> x>>y>>z;
 
    add t;
-   add tt(x, y);
+   add tt(x, y,z);
    tt.display();
    getch();
    return 0;
